@@ -4,6 +4,7 @@ import { authenticateUser } from '../middleware/authMiddleware.js';
 
 const userRoutes = express.Router();
 
+// user auth routes
 userRoutes.post("/signUp",signup);
 userRoutes.post("/login",login);
 userRoutes.post("/logout",logout);
