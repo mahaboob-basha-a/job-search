@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Correct database path inside "server/db"
-const dbPath = path.join(__dirname, "db", "jobsearch.db");
+const dbPath = path.join(__dirname, "tmp", "jobsearch.db");
 
 // Ensure "db" folder exists
 if (!fs.existsSync(path.dirname(dbPath))) {
