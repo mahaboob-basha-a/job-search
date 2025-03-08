@@ -42,6 +42,7 @@ const Auth = () => {
           toast.success(res.message)
           handleState()
         } catch (error) {
+          console.log(error)
           toast.error(error.response.data.message || "Invalid credintials")
         }
       }

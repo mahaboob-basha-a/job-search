@@ -27,8 +27,8 @@ export const signup = (req, res) => {
             [name, email, phone, hashedPassword],
             function (err) {
                 if (err) {
-                     
-                    return res.status(400).json({ message: "User email or mobile already exists" });
+                    
+                    return res.status(400).json({ message: `User email or mobile already exists`,error:err.message });
                 }
                 res.status(201).json({ message: "User registered successfully", userId: this.lastID });
             }
